@@ -4,8 +4,12 @@ Popularne pytania rekrutacyjne na stanowisko **Junior Java Developer**
 
 ### Bazy danych
 
-Jakie mamy rodzaje złączen?
+Jakie mamy rodzaje złączeń?
 
 Odp: inner join, left (outer) join, right (outer) join, full join.
+
+Co takkego dodasz, aby przyśpieszyć wyszukiwanie na kolumnie?
+
+Odp: Aby przyspieszyć wyszukiwanie po kolumnie w bazach danych, dodajemy indeks (index) na tej kolumnie.
 
 
