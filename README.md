@@ -12,4 +12,8 @@ Co takkego dodasz, aby przyśpieszyć wyszukiwanie na kolumnie?
 
 Odp: Aby przyspieszyć wyszukiwanie po kolumnie w bazach danych, dodajemy indeks (index) na tej kolumnie.
 
+Co takiego może się wydarzyć, gdy będzie nadmiar indeksów?
+
+Odp: Może wystąpić spadek wydajności podczas operacji modyfikujących dane.
+
 
