@@ -16,4 +16,6 @@ Co takiego może się wydarzyć, gdy będzie nadmiar indeksów?
 
 Odp: Może wystąpić spadek wydajności podczas operacji modyfikujących dane.
 
+Podaj definicję transakcji?
 
+Odp: Zbiór operacji na bazie danych, które w istocie stanowią pewną całość i jako takie powinny być wykonane wszystkie lub żadna z nich. Transakcja składa się z 3 etapów: rozpoczęcia, wykonania, zamknięcia.
