@@ -22,10 +22,18 @@ Odp: Zbiór operacji na bazie danych, które w istocie stanowią pewną całoś�
 
 Co to jest ACID?
 
-Zbiór właściwości gwarantujących poprawne przetwarzanie transakcji w bazach danych.
+Odp: Zbiór właściwości gwarantujących poprawne przetwarzanie transakcji w bazach danych.
 
 A - atomicity (niepodzielność) | Albo transakcja się wykona albo nie.
 C - consistency (spójność) | Po wykonaniu transakcji nie będzie naruszona integralność bazy danych.
 I - isolation (izolacja) | Jeśli dwie transakcje wykonują się współbieżnie to zwykle nie widzą wprowadzonych przez siebie zmian.
 D - durability (trwałość) | System potrafi uruchomić się i udostępnić spójne, nienaruszone aktualnie dane zapisane w ramach zatwierdzonych transakcji.
 
+Jakie mamy poziomy izolacji transakcji (model ANSI)?
+
+Odp:
+
+*read uncommitted* – jedna transakcja może odczytywać wiersze, na których działają inne transakcje (najniższy poziom izolacji).
+*read committed* – transakcja może odczytywać tylko wiersze zapisane.
+*repeatable read* – transakcja nie może czytać ani zapisywać na wierszach odczytywanych lub zapisywanych w innej transakcji.
+*serializable (szeregowalne)* – wyniki współbieżnie realizowanych zapytań muszą być identyczne z wynikami tych samych zapytań realizowanych szeregowo (pełna izolacja).
