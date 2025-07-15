@@ -37,3 +37,7 @@ Odp:
 *read committed* – transakcja może odczytywać tylko wiersze zapisane.
 *repeatable read* – transakcja nie może czytać ani zapisywać na wierszach odczytywanych lub zapisywanych w innej transakcji.
 *serializable (szeregowalne)* – wyniki współbieżnie realizowanych zapytań muszą być identyczne z wynikami tych samych zapytań realizowanych szeregowo (pełna izolacja).
+
+Co to jest relacja?
+
+Odp: Relacje bazy danych są powiązaniami między tabelami, które są tworzone na podstawie instrukcji łączenia w celu odtworzenia danych.
