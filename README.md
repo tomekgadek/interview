@@ -45,3 +45,8 @@ Popularne pytania rekrutacyjne na stanowisko **Junior Java Developer**
 **Co to jest relacja?**
 
 > Relacje bazy danych są powiązaniami między tabelami, które są tworzone na podstawie instrukcji łączenia w celu odtworzenia danych.
+
+**Co to jest 'klucz główny'?**
+
+Unikalna wartość identyfikująca jednoznacznie każdy rekord tabeli (klucz może być złożony).
+
