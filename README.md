@@ -50,3 +50,7 @@ Popularne pytania rekrutacyjne na stanowisko **Junior Java Developer**
 
 Unikalna wartość identyfikująca jednoznacznie każdy rekord tabeli (klucz może być złożony).
 
+**Co to jest 'klucz obcy'?**
+
+Wykorzystuje się go do tworzenia powiązania pomiędzy parą tabel, gdzie w jednej tabeli ten zbiór atrybutów jest kluczem obcym, a w drugiej kluczem głównym (referencja do tabeli).
+
