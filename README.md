@@ -54,3 +54,9 @@ Unikalna wartość identyfikująca jednoznacznie każdy rekord tabeli (klucz mo�
 
 Wykorzystuje się go do tworzenia powiązania pomiędzy parą tabel, gdzie w jednej tabeli ten zbiór atrybutów jest kluczem obcym, a w drugiej kluczem głównym (referencja do tabeli).
 
+### Java
+
+**W jaki spsób możemy tworzyć wątki?**
+
+Implementujemy interfejs *Runnable* lub dziedziczymy po klasie *Thread*.
+
