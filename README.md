@@ -60,3 +60,7 @@ Wykorzystuje się go do tworzenia powiązania pomiędzy parą tabel, gdzie w jed
 
 Implementujemy interfejs *Runnable* lub dziedziczymy po klasie *Thread*.
 
+**Strumienie Java - kiedy tak naprawdę się wykonują?**
+
+W Javie strumienie (Stream) są leniwe (*lazy evaluation*), co oznacza, że operacje na strumieniach nie są wykonywane natychmiast. Wykonują się dopiero w momencie wywołania operacji terminalnej (np. forEach(), collect(), count(), findFirst(), anyMatch(), allMatch(), reduce()).
+
