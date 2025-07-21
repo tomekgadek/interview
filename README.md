@@ -64,3 +64,11 @@ Implementujemy interfejs *Runnable* lub dziedziczymy po klasie *Thread*.
 
 W Javie strumienie (Stream) są leniwe (*lazy evaluation*), co oznacza, że operacje na strumieniach nie są wykonywane natychmiast. Wykonują się dopiero w momencie wywołania operacji terminalnej (np. forEach(), collect(), count(), findFirst(), anyMatch(), allMatch(), reduce()).
 
+**Który fragment kodu będzie bardziej wydajny?**
+
+```java
+String name1 = "abc"; // 1
+String name2 = new String("abc"); // 2
+```
+
+Bardziej optymalna będzie wersja `1`. Wykorzystywany jest tzw. **string pool**. Jest to specjalny obszar w pamięci, gdzie przechowywane są literały tekstowe. Wersja `2` tworzy nowy obiekt.
