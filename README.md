@@ -72,3 +72,8 @@ String name2 = new String("abc"); // 2
 ```
 
 Bardziej optymalna będzie wersja `1`. Wykorzystywany jest tzw. **string pool**. Jest to specjalny obszar w pamięci, gdzie przechowywane są literały tekstowe. Wersja `2` tworzy nowy obiekt.
+
+**Jaki wyjątek przerwie transakcję? (np. przy użyciu JPA, Hibernate i Spring)**
+
+Wyjątek niekontrolowany. Może to być wyjątek **RuntimeException** i wszystkie jego podklasy.
+
