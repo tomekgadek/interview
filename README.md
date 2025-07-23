@@ -77,3 +77,10 @@ Bardziej optymalna będzie wersja `1`. Wykorzystywany jest tzw. **string pool**.
 
 Wyjątek niekontrolowany. Może to być wyjątek **RuntimeException** i wszystkie jego podklasy.
 
+**Jakie mamy rodzaje wyjątków w Java?**
+
+Mamy `2` rodzaje wyjątków w Java:
+
++ Checked exceptions (sprwdzane, np. IOException - dziedziczące po Exception).
++ Unchecked exceptions (niesprawdzane, np. NullPointerException - dziedziczące po RuntimeException).
+
