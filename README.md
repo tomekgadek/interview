@@ -84,3 +84,8 @@ Mamy `2` rodzaje wyjątków w Java:
 + Checked exceptions (sprwdzane, np. IOException - dziedziczące po Exception).
 + Unchecked exceptions (niesprawdzane, np. NullPointerException - dziedziczące po RuntimeException).
 
+**Czy kluczem w mapie może być obiekt?**
+
+Tak, w Javie obiekt może być kluczem w mapie (np. w HashMap, TreeMap, LinkedHashMap). Nie musi to być **String** czy **Integer**.
+
+Nie zapominamy o poprawnym nadpisaniu **equals()** i **hashCode()**. Zadbajmy o to, aby obiekt był niemutowalny. Gdy chcemy skorzystać z takiej opcji dla **TreeMap** to nie zapominamy zaimplementować interfejsu **Comparable** lub **Comparator**.
