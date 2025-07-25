@@ -89,3 +89,10 @@ Mamy `2` rodzaje wyjątków w Java:
 Tak, w Javie obiekt może być kluczem w mapie (np. w HashMap, TreeMap, LinkedHashMap). Nie musi to być **String** czy **Integer**.
 
 Nie zapominamy o poprawnym nadpisaniu **equals()** i **hashCode()**. Zadbajmy o to, aby obiekt był niemutowalny. Gdy chcemy skorzystać z takiej opcji dla **TreeMap** to nie zapominamy zaimplementować interfejsu **Comparable** lub **Comparator**.
+
+### Git
+
+**Co to jest rebase?**
+
+**git rebase** to alternatywa dla merge, która przepisuje historię commitów, aby uzyskać czystą, liniową historię zmian.
+
