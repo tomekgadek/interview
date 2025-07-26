@@ -96,3 +96,12 @@ Nie zapominamy o poprawnym nadpisaniu **equals()** i **hashCode()**. Zadbajmy o 
 
 **git rebase** to alternatywa dla merge, która przepisuje historię commitów, aby uzyskać czystą, liniową historię zmian.
 
+### Spring
+
+**Jakie mamy rodzaje wstrzykiwania zależności (DI)?**
+
+W Spring Framework istnieją trzy główne rodzaje wstrzykiwania zależności:
+
++ Konstruktor,
++ Setter,
++ Pole.
