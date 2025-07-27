@@ -105,3 +105,7 @@ W Spring Framework istnieją trzy główne rodzaje wstrzykiwania zależności:
 + Konstruktor,
 + Setter,
 + Pole.
+
+**Jaki rodzaj wstrzykiwania jest zalecany? Dlaczego?**
+
+Wstrzykiwanie zależności przez konstruktor jest zalecane. Zastosowanie takiego wstrzykiwania ułatwia testowanie.
