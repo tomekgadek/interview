@@ -109,3 +109,15 @@ W Spring Framework istnieją trzy główne rodzaje wstrzykiwania zależności:
 **Jaki rodzaj wstrzykiwania jest zalecany? Dlaczego?**
 
 Wstrzykiwanie zależności przez konstruktor jest zalecane. Zastosowanie takiego wstrzykiwania ułatwia testowanie.
+
+**Opowiedz mi cokolwiek o Spring Cache?**
+
+**Spring Cache** to mechanizm wbudowany w Spring Framework, który pozwala buforować (cache'ować) wyniki metod, aby przyspieszyć działanie aplikacji, szczególnie gdy:
+
++ metoda zwraca "drogi" wynik (np. pobiera dane z bazy lub API),
++ dane rzadko się zmieniają.
+
+**Jak to działa?**
+
+Spring przechowuje wynik metody przy pierwszym wywołaniu i zwraca go z pamięci podręcznej (cache) przy kolejnych wywołaniach zamiast wykonywać metodę ponownie.
+
