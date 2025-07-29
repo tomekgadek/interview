@@ -117,7 +117,25 @@ Wstrzykiwanie zależności przez konstruktor jest zalecane. Zastosowanie takiego
 + metoda zwraca "drogi" wynik (np. pobiera dane z bazy lub API),
 + dane rzadko się zmieniają.
 
-**Jak to działa?**
+Jak to działa?
 
 Spring przechowuje wynik metody przy pierwszym wywołaniu i zwraca go z pamięci podręcznej (cache) przy kolejnych wywołaniach zamiast wykonywać metodę ponownie.
 
+**Wymień poziomy propagacji transakcji w Spring?**
+
+W Springu mamy `7` poziomów propagacji transakcji, które określają, jak metoda oznaczona `@Transactional` zachowuje się względem istniejącej transakcji.
+
++ REQUIRED (domyślny)
+  + Jeśli istnieje transakcja – użyj jej. Jeśli nie – rozpocznij nową.
++ REQUIRES_NEW
+  + Zawsze rozpoczyna nową transakcję, zawiesza obecną (jeśli jest).
++ SUPPORTS
+  + Jeśli istnieje transakcja – użyj jej. Jeśli nie – działaj bez transakcji.
++ NOT_SUPPORTED	
+  + Zawsze działa bez transakcji, zawiesza istniejącą.
++ NEVER	
+  + Działa tylko poza transakcją. Jeśli jakaś istnieje – zgłasza wyjątek.
++ MANDATORY	
+  + Wymaga aktywnej transakcji. Jeśli jej nie ma – zgłasza wyjątek.
++ NESTED
+  + Tworzy zagnieżdżoną transakcję (jeśli baza danych i menedżer transakcji wspiera savepointy). W przeciwnym razie działa jak REQUIRED.
