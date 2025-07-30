@@ -139,3 +139,14 @@ W Springu mamy `7` poziomów propagacji transakcji, które określają, jak meto
   + Wymaga aktywnej transakcji. Jeśli jej nie ma – zgłasza wyjątek.
 + NESTED
   + Tworzy zagnieżdżoną transakcję (jeśli baza danych i menedżer transakcji wspiera savepointy). W przeciwnym razie działa jak REQUIRED.
+
+### Inne
+
+**Jakie mamy paradygmaty programowania?**
+
++ Imperatywny (C),
++ Proceduralny (C),
++ Obiektowy (Java),
++ Funkcyjny (Haskell),
++ Deklaratywny (SQL),
++ Logiczny (Prolog).
