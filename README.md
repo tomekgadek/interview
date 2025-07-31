@@ -150,3 +150,11 @@ W Springu mamy `7` poziomów propagacji transakcji, które określają, jak meto
 + Funkcyjny (Haskell),
 + Deklaratywny (SQL),
 + Logiczny (Prolog).
+
+**Jakie znasz paradygmaty programowania obiektowego?**
+
++ Abstrakcja,
++ Enkapsulacja,
++ Dziedziczenie,
++ Polimorfizm.
+
