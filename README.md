@@ -34,7 +34,7 @@ Popularne pytania rekrutacyjne na stanowisko **Junior Java Developer**
 
 **Jakie mamy poziomy izolacji transakcji (model ANSI)?**
 
-> *read uncommitted* – jedna transakcja może odczytywać wiersze, na których działają inne transakcje (najniższy poziom izolacji).
+> *read uncommitted* - jedna transakcja może odczytywać wiersze, na których działają inne transakcje (najniższy poziom izolacji).
 
 > *read committed* – transakcja może odczytywać tylko wiersze zapisane.
 
@@ -48,21 +48,21 @@ Popularne pytania rekrutacyjne na stanowisko **Junior Java Developer**
 
 **Co to jest 'klucz główny'?**
 
-Unikalna wartość identyfikująca jednoznacznie każdy rekord tabeli (klucz może być złożony).
+> Unikalna wartość identyfikująca jednoznacznie każdy rekord tabeli (klucz może być złożony).
 
 **Co to jest 'klucz obcy'?**
 
-Wykorzystuje się go do tworzenia powiązania pomiędzy parą tabel, gdzie w jednej tabeli ten zbiór atrybutów jest kluczem obcym, a w drugiej kluczem głównym (referencja do tabeli).
+> Wykorzystuje się go do tworzenia powiązania pomiędzy parą tabel, gdzie w jednej tabeli ten zbiór atrybutów jest kluczem obcym, a w drugiej kluczem głównym (referencja do tabeli).
 
 ### Java
 
 **W jaki spsób możemy tworzyć wątki?**
 
-Implementujemy interfejs *Runnable* lub dziedziczymy po klasie *Thread*.
+> Implementujemy interfejs *Runnable* lub dziedziczymy po klasie *Thread*.
 
 **Strumienie Java - kiedy tak naprawdę się wykonują?**
 
-W Javie strumienie (Stream) są leniwe (*lazy evaluation*), co oznacza, że operacje na strumieniach nie są wykonywane natychmiast. Wykonują się dopiero w momencie wywołania operacji terminalnej (np. forEach(), collect(), count(), findFirst(), anyMatch(), allMatch(), reduce()).
+> W Javie strumienie (Stream) są leniwe (*lazy evaluation*), co oznacza, że operacje na strumieniach nie są wykonywane natychmiast. Wykonują się dopiero w momencie wywołania operacji terminalnej (np. forEach(), collect(), count(), findFirst(), anyMatch(), allMatch(), reduce()).
 
 **Który fragment kodu będzie bardziej wydajny?**
 
@@ -71,90 +71,89 @@ String name1 = "abc"; // 1
 String name2 = new String("abc"); // 2
 ```
 
-Bardziej optymalna będzie wersja `1`. Wykorzystywany jest tzw. **string pool**. Jest to specjalny obszar w pamięci, gdzie przechowywane są literały tekstowe. Wersja `2` tworzy nowy obiekt.
+> Bardziej optymalna będzie wersja `1`. Wykorzystywany jest tzw. **string pool**. Jest to specjalny obszar w pamięci, gdzie przechowywane są literały tekstowe. Wersja `2` tworzy nowy obiekt.
 
 **Jaki wyjątek przerwie transakcję? (np. przy użyciu JPA, Hibernate i Spring)**
 
-Wyjątek niekontrolowany. Może to być wyjątek **RuntimeException** i wszystkie jego podklasy.
+> Wyjątek niekontrolowany. Może to być wyjątek **RuntimeException** i wszystkie jego podklasy.
 
 **Jakie mamy rodzaje wyjątków w Java?**
 
-Mamy `2` rodzaje wyjątków w Java:
-
-+ Checked exceptions (sprwdzane, np. IOException - dziedziczące po Exception).
-+ Unchecked exceptions (niesprawdzane, np. NullPointerException - dziedziczące po RuntimeException).
+> Mamy `2` rodzaje wyjątków w Java:
+> 
+> + Checked exceptions (sprwdzane, np. IOException - dziedziczące po Exception).
+> + Unchecked exceptions (niesprawdzane, np. NullPointerException - dziedziczące po RuntimeException).
 
 **Czy kluczem w mapie może być obiekt?**
 
-Tak, w Javie obiekt może być kluczem w mapie (np. w HashMap, TreeMap, LinkedHashMap). Nie musi to być **String** czy **Integer**.
-
-Nie zapominamy o poprawnym nadpisaniu **equals()** i **hashCode()**. Zadbajmy o to, aby obiekt był niemutowalny. Gdy chcemy skorzystać z takiej opcji dla **TreeMap** to nie zapominamy zaimplementować interfejsu **Comparable** lub **Comparator**.
+> Tak, w Javie obiekt może być kluczem w mapie (np. w HashMap, TreeMap, LinkedHashMap). Nie musi to być **String** czy **Integer**.
+> 
+> Nie zapominamy o poprawnym nadpisaniu **equals()** i **hashCode()**. Zadbajmy o to, aby obiekt był niemutowalny. Gdy chcemy skorzystać z takiej opcji dla **TreeMap** to nie zapominamy zaimplementować interfejsu **Comparable** lub **Comparator**.
 
 ### Git
 
 **Co to jest rebase?**
 
-**git rebase** to alternatywa dla merge, która przepisuje historię commitów, aby uzyskać czystą, liniową historię zmian.
+> **git rebase** to alternatywa dla merge, która przepisuje historię commitów, aby uzyskać czystą, liniową historię zmian.
 
 ### Spring
 
 **Jakie mamy rodzaje wstrzykiwania zależności (DI)?**
 
-W Spring Framework istnieją trzy główne rodzaje wstrzykiwania zależności:
-
-+ Konstruktor,
-+ Setter,
-+ Pole.
+> W Spring Framework istnieją trzy główne rodzaje wstrzykiwania zależności:
+> 
+> + Konstruktor,
+> + Setter,
+> + Pole.
 
 **Jaki rodzaj wstrzykiwania jest zalecany? Dlaczego?**
 
-Wstrzykiwanie zależności przez konstruktor jest zalecane. Zastosowanie takiego wstrzykiwania ułatwia testowanie.
+> Wstrzykiwanie zależności przez konstruktor jest zalecane. Zastosowanie takiego wstrzykiwania ułatwia testowanie.
 
 **Opowiedz mi cokolwiek o Spring Cache?**
 
-**Spring Cache** to mechanizm wbudowany w Spring Framework, który pozwala buforować (cache'ować) wyniki metod, aby przyspieszyć działanie aplikacji, szczególnie gdy:
-
-+ metoda zwraca "drogi" wynik (np. pobiera dane z bazy lub API),
-+ dane rzadko się zmieniają.
-
-Jak to działa?
-
-Spring przechowuje wynik metody przy pierwszym wywołaniu i zwraca go z pamięci podręcznej (cache) przy kolejnych wywołaniach zamiast wykonywać metodę ponownie.
+> **Spring Cache** to mechanizm wbudowany w Spring Framework, który pozwala buforować (cache'ować) wyniki metod, aby przyspieszyć działanie aplikacji, szczególnie gdy:
+> 
+> + metoda zwraca "drogi" wynik (np. pobiera dane z bazy lub API),
+> + dane rzadko się zmieniają.
+> 
+> Jak to działa?
+>
+> Spring przechowuje wynik metody przy pierwszym wywołaniu i zwraca go z pamięci podręcznej (cache) przy kolejnych wywołaniach zamiast wykonywać metodę ponownie.
 
 **Wymień poziomy propagacji transakcji w Spring?**
 
-W Springu mamy `7` poziomów propagacji transakcji, które określają, jak metoda oznaczona `@Transactional` zachowuje się względem istniejącej transakcji.
+> W Springu mamy `7` poziomów propagacji transakcji, które określają, jak metoda oznaczona `@Transactional` zachowuje się względem istniejącej transakcji.
 
-+ REQUIRED (domyślny)
-  + Jeśli istnieje transakcja – użyj jej. Jeśli nie – rozpocznij nową.
-+ REQUIRES_NEW
-  + Zawsze rozpoczyna nową transakcję, zawiesza obecną (jeśli jest).
-+ SUPPORTS
-  + Jeśli istnieje transakcja – użyj jej. Jeśli nie – działaj bez transakcji.
-+ NOT_SUPPORTED	
-  + Zawsze działa bez transakcji, zawiesza istniejącą.
-+ NEVER	
-  + Działa tylko poza transakcją. Jeśli jakaś istnieje – zgłasza wyjątek.
-+ MANDATORY	
-  + Wymaga aktywnej transakcji. Jeśli jej nie ma – zgłasza wyjątek.
-+ NESTED
-  + Tworzy zagnieżdżoną transakcję (jeśli baza danych i menedżer transakcji wspiera savepointy). W przeciwnym razie działa jak REQUIRED.
+> + REQUIRED (domyślny)
+>   + Jeśli istnieje transakcja – użyj jej. Jeśli nie – rozpocznij nową.
+> + REQUIRES_NEW
+>   + Zawsze rozpoczyna nową transakcję, zawiesza obecną (jeśli jest).
+> + SUPPORTS
+>   + Jeśli istnieje transakcja – użyj jej. Jeśli nie – działaj bez transakcji.
+> + NOT_SUPPORTED	
+>   + Zawsze działa bez transakcji, zawiesza istniejącą.
+> + NEVER	
+>   + Działa tylko poza transakcją. Jeśli jakaś istnieje – zgłasza wyjątek.
+> + MANDATORY	
+>   + Wymaga aktywnej transakcji. Jeśli jej nie ma – zgłasza wyjątek.
+> + NESTED
+>   + Tworzy zagnieżdżoną transakcję (jeśli baza danych i menedżer transakcji wspiera savepointy). W przeciwnym razie działa jak REQUIRED.
 
 ### Inne
 
 **Jakie mamy paradygmaty programowania?**
 
-+ Imperatywny (C),
-+ Proceduralny (C),
-+ Obiektowy (Java),
-+ Funkcyjny (Haskell),
-+ Deklaratywny (SQL),
-+ Logiczny (Prolog).
+> + Imperatywny (C),
+> + Proceduralny (C),
+> + Obiektowy (Java),
+> + Funkcyjny (Haskell),
+> + Deklaratywny (SQL),
+> + Logiczny (Prolog).
 
 **Jakie znasz paradygmaty programowania obiektowego?**
 
-+ Abstrakcja,
-+ Enkapsulacja,
-+ Dziedziczenie,
-+ Polimorfizm.
-
+> + Abstrakcja,
+> + Enkapsulacja,
+> + Dziedziczenie,
+> + Polimorfizm.
