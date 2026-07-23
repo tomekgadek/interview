@@ -140,6 +140,19 @@ String name2 = new String("abc"); // 2
 > + NESTED
 >   + Tworzy zagnieżdżoną transakcję (jeśli baza danych i menedżer transakcji wspiera savepointy). W przeciwnym razie działa jak REQUIRED.
 
+**Czy taka konstrukcja ma prawo zadziałać?**
+
+Mamy taką implementację bean'a:
+
+```java
+@Bean
+public class MyBean {
+
+}
+```
+
+> **Nie.** Klasa oznaczona `@Bean` to błąd. `@Bean` to adnotacja do metod wewnątrz klas konfiguracyjnych (oznaczonych `@Configuration`), nie do samych klas.
+
 ### Inne
 
 **Jakie mamy paradygmaty programowania?**
