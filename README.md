@@ -153,6 +153,10 @@ public class MyBean {
 
 > **Nie.** Klasa oznaczona `@Bean` to błąd. `@Bean` to adnotacja do metod wewnątrz klas konfiguracyjnych (oznaczonych `@Configuration`), nie do samych klas.
 
+**Co to jest `Set` w Java i czym różni się od `List`?**
+
+> `Set` to kolekcja, która nie przechowuje duplikatów i nie gwarantuje kolejności elementów. Natomiast `List` to kolekcja, która może przechowywać duplikaty i zachowuje kolejność dodawania elementów.
+
 ### Inne
 
 **Jakie mamy paradygmaty programowania?**
